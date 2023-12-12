@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: cont
-        image: pradeepcoeb/javapradeep:9
+        image: pradeepcoeb/javapradeep2:10
         ports:
         - containerPort: 80
