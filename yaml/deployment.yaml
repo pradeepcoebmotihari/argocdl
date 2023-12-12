@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: dep2
+spec:
+  selector:
+    matchLabels:
+      name: pradee21
+  replicas: 3
+  template:
+    metadata:
+      name: pod
+      labels:
+        name: pradeep2
+    spec:
+      containers:
+      - name: cont
+        image: pradeepcoeb/javapradeep:9
+        ports:
+        - containerPort: 80
